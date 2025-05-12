@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanuman - Play and Download Bhajan,Chailsa More.</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="logo.png">
+</head>
+<body>
+    <nav>
+        
+        <div class="nav-left">
+            <a href=""><img src="logo.png" alt="Hanuman Logo" class="nav-logo"></a>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#bhajans">Chailsa</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        
+    </nav>
+    <header>
+        <img src="logo.png" alt="Lord Hanuman Image" />
+        <h1>Welcome to Hanuman Bhajan Portal</h1>
+        <p>Listen, Download & Explore Devotional Bhajans, Chalisas, and More</p>
+        <a href="#bhajans" class="cta-button">Start Listening</a>
+      </header>
+      <section id="bhajans" class="bhajan-section">
+        <h2>🎵 Listen to Devotional Bhajans</h2>
+        <div class="bhajan-list">
+          <div class="bhajan-item">
+            <h3>Hanuman Chalisa</h3>
+            <audio controls>
+              <source src="hanuman/Shree Hanuman Chalisa-.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+      
+          <div class="bhajan-item">
+            <h3>Sankat Mochan Hanuman Ashtak</h3>
+            <audio controls>
+              <source src="hanuman/04_-_Sankatmochan_Hanuman_Ashtak(wapking.fm).mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+
+          <div class="bhajan-item">
+            <h3>Bajrang Baan</h3>
+            <audio controls>
+              <source src="hanuman/Bajrang Baan Lofi(PagalWorld.com.cm).mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+      
+          <!-- Add more bhajans below -->
+        </div>
+      </section>
+      
+      <!-- Contact Us Section -->
+      <section class="contact" id="contact">
+        <h2 id="#contact">Contact Us</h2>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="370e95de-d023-4c08-8395-cb98481d918e">
+      
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      
+          <input type="checkbox" name="botcheck" style="display:none;">
+      
+          <button type="submit" class="cta-button">Send Message</button>
+          <div class="form-message" id="form-message"></div>
+        </form>
+      </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <img src="logo.png" alt="Hanuman Logo" class="footer-logo">
+      <p>&copy; 2025 Hanuman Bhajan Portal. All rights reserved.</p>
+      <p>Made by <strong>Bhavya S Solanki</strong></p>
+      <p>
+        <a href="https://www.instagram.com/bhavya_._007" target="_blank" class="footer-link">
+          Instagram: @bhavya_._007
+        </a>
+      </p>
+    </div>
+  </footer>
+  <script src="js.js"></script>
+  
+</body>
+</html>

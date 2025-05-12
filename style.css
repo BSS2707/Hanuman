@@ -1,0 +1,438 @@
+*{
+    margin: 0; 
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to nav */
+nav {
+    background: linear-gradient(to right, #c31432, #240b36);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation: slideFadeIn 1s ease-out;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+   
+}
+
+.nav-left img,
+.nav-list li {
+    opacity: 0;
+    animation: fadeInItem 1s forwards;
+}
+
+.nav-list li:nth-child(1) { animation-delay: 0.2s; }
+.nav-list li:nth-child(2) { animation-delay: 0.4s; }
+.nav-list li:nth-child(3) { animation-delay: 0.6s; }
+.nav-list li:nth-child(4) { animation-delay: 0.8s; }
+.nav-list li:nth-child(5) { animation-delay: 1s; }
+
+@keyframes fadeInItem {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.nav-list a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: lighter;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.nav-list a:hover{
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffd700;
+    /* font-size: 1.5rem; */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+.nav-logo {
+    opacity: 0;
+    animation: fadeInItem 1s forwards;
+    animation-delay: 0.1s;
+}
+
+ /* Header styling */
+ header {
+    background: linear-gradient(to right, #c31432, #240b36);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  header img {
+    max-width: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #ffd700;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s;
+  }
+
+  .cta-button:hover {
+    transform: scale(1.05);
+  }
+
+  header img,
+header h1,
+header p,
+.cta-button {
+    opacity: 0;
+    animation: fadeInItem 1s forwards;
+}
+
+header img {
+    animation-delay: 0.2s;
+}
+header h1 {
+    animation-delay: 0.4s;
+}
+header p {
+    animation-delay: 0.6s;
+}
+.cta-button {
+    animation-delay: 0.8s;
+}
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade individual items in sequence */
+@keyframes fadeInItem {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav, header {
+    animation: slideFadeIn 1s ease-out;
+}
+
+/* Nav elements animation */
+.nav-logo,
+.nav-list li {
+    opacity: 0;
+    animation: fadeInItem 1s forwards;
+}
+
+.nav-logo {
+    animation-delay: 0.2s;
+}
+
+.nav-list li:nth-child(1) { animation-delay: 0.3s; }
+.nav-list li:nth-child(2) { animation-delay: 0.4s; }
+.nav-list li:nth-child(3) { animation-delay: 0.5s; }
+.nav-list li:nth-child(4) { animation-delay: 0.6s; }
+.nav-list li:nth-child(5) { animation-delay: 0.7s; }
+
+/* Header elements animation */
+header img,
+header h1,
+header p,
+.cta-button {
+    opacity: 0;
+    animation: fadeInItem 1s forwards;
+}
+
+header img {
+    animation-delay: 0.8s;
+}
+header h1 {
+    animation-delay: 0.9s;
+}
+header p {
+    animation-delay: 1s;
+}
+.cta-button {
+    animation-delay: 1.1s;
+}
+#contact {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    animation: slideFadeIn 1s ease-out;
+}
+
+ section.contact {
+      background: linear-gradient(to right, #c31432, #240b36);
+      color: white;
+      padding: 60px 20px;
+      animation: slideFadeIn 1s ease-out;
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    section.contact {
+        background: linear-gradient(to right, #c31432, #240b36);
+        color: white;
+        padding: 60px 20px;
+        animation: slideFadeIn 1s ease-out;
+      }
+  
+      .contact h2 {
+        color: rgb(44, 44, 44);
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2rem;
+      }
+  
+
+      form {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        color: #000;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        animation: fadeInItem 1s forwards;
+        box-sizing: border-box;
+        width: 100%; /* Ensures it doesn't overflow */
+      }
+      
+      form input,
+      form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+      }
+  .form-message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .cta-button {
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .cta-button:hover {
+    transform: scale(1.05);
+  }
+footer {
+    background: linear-gradient(to right, #c31432, #240b36);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    animation: slideFadeIn 1s ease-out;
+}
+
+.footer-content {
+    opacity: 0;
+    animation: fadeInItem 1s forwards;
+    animation-delay: 1.3s;
+}
+
+.footer-logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.bhajan-section {
+    background: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+    animation: slideFadeIn 1s ease-out;
+  }
+  
+  .bhajan-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #c31432;
+  }
+  
+  .bhajan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .bhajan-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: fadeInItem 1s forwards;
+  }
+  
+  .bhajan-item h3 {
+    margin-bottom: 10px;
+    color: #240b36;
+  }
+
+  section {
+    scroll-margin-top: 80px; /* Adjust to your navbar height */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  medianav {
+    flex-wrap: wrap;
+  }
+  
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-left img {
+      width: 100px;
+    }
+  }
+  /* header h1 {
+    font-size: 2rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+   */
+  @media (max-width: 768px) {
+    header {
+      padding: 40px 10px;
+    }
+  
+    header img {
+      width: 150px;
+    }
+  }
+  /* .bhajan-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .bhajan-item {
+    flex: 1 1 300px;
+    max-width: 400px;
+  } */
+  .contact form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+          
