@@ -11,3 +11,15 @@ alert("Welcome To Hanuman Bhajan Portal.");
     }
   });
 
+  const allAudios = document.querySelectorAll('audio');
+
+allAudios.forEach(audio => {
+  audio.addEventListener('play', () => {
+    allAudios.forEach(other => {
+      if (other !== audio) {
+        other.pause();
+      }
+    });
+  });
+});
+
